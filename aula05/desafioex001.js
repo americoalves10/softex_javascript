@@ -20,4 +20,14 @@ console.log('|')
 console.log('| CURSO: '+curso)
 console.log('|')
 console.log('| TIME: '+time)
+console.log('|')
+
+let ano = 2025
+let idade = ano - anonasc
+if (idade >= 18) {
+    console.log('| A T E N Ç Ã O !!!!!! USUÁRIO É DE MAIOR!!!!!!')
+} else {
+    console.log('| A T E N Ç Ã O ****** USUÁRIO É DE MENOR******')
+}
+
 console.log('_________________________________________________________')
