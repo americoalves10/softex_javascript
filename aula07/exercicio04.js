@@ -5,4 +5,5 @@ for (i=0; i<=numeros.length-1;i++) {
         numpar.push(numeros[i])        
     }        
 }
-console.log(numpar)
+numpar.sort();
+console.log('Os números pares são: '+numpar.join(', '))
