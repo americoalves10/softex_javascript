@@ -29,6 +29,7 @@ pilotos.push(corredor5)
 for (const PilotoFormula1 of pilotos) {
     //console.log("Chaves:", Object.keys(PilotoFormula1));
     console.log("Valores:", Object.values(PilotoFormula1));
+    console.log(PilotoFormula1.correr())
     //console.log("Entradas:", Object.entries(PilotoFormula1));
 }
 
