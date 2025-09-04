@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/americoalves10/softex_javascript/issues"
   },
-  "homepage": "https://github.com/americoalves10/softex_javascript#readme"
+  "homepage": "https://github.com/americoalves10/softex_javascript#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5"
+  }
 }
