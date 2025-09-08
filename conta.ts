@@ -30,12 +30,14 @@ class ContaCorrente {
 }
 
 let readline = require('readline-sync')
-
 let depositoinicial = readline.question('Qual o valor do seu deposito inicial?')
-const minhaConta = new ContaCorrente(depositoinicial);
-let valor = readline.question('Qual o valor do seu deposito inicial?')
-const deposito = new ContaCorrente(valor);
-minhaConta.depositar(valor);
+const minhaConta = new ContaCorrente(parseFloat(depositoinicial));
+console.log(minhaConta.obterSaldo());
 
-//minhaConta.sacar(200);
+let deposito = readline.question('Qual o valor do seu deposito?')
+minhaConta.depositar(parseFloat(deposito));
+console.log(minhaConta.obterSaldo());
+
+let saque = readline.question('Qual o valor do seu saque?')
+minhaConta.sacar(parseFloat(saque));
 console.log(minhaConta.obterSaldo());
