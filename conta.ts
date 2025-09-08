@@ -29,8 +29,13 @@ class ContaCorrente {
     }
 }
 
-const minhaConta = new ContaCorrente(1000);
+let readline = require('readline-sync')
 
-minhaConta.depositar(500);
-minhaConta.sacar(200);
+let depositoinicial = readline.question('Qual o valor do seu deposito inicial?')
+const minhaConta = new ContaCorrente(depositoinicial);
+let valor = readline.question('Qual o valor do seu deposito inicial?')
+const deposito = new ContaCorrente(valor);
+minhaConta.depositar(valor);
+
+//minhaConta.sacar(200);
 console.log(minhaConta.obterSaldo());

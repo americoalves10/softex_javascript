@@ -19,5 +19,8 @@
   "homepage": "https://github.com/americoalves10/softex_javascript#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
   }
 }
